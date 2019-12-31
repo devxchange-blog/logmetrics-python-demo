@@ -22,12 +22,9 @@ pip install logmetrics-sdk
 from logmetrics_sdk.logmetrics import LogMetrics
 
 @app.route('/todo/api/v1/tasks', methods=['GET'])
-# @auth.login_required
 @LogMetrics
 def get_tasks():
     return jsonify(tasks)
-
-
 	
 ```
 
